@@ -1,0 +1,18 @@
+---
+pagination:
+  data: map
+  size: 1
+  alias: book
+  resolve: values
+permalink: "{{ book.name | slug }}.njk"
+---
+---
+title: {{ book.name }}
+pagination:
+  data: map.{{ book.name | slug }}.chapters
+  size: 1
+  alias: chapter
+permalink: "book/{{ "title | slug" | escape }}/chapter/{{ "chapter" | escape }}/"
+---
+
+This is some content for {{ book.name }} chapter {{ "chapter" | escape }}.

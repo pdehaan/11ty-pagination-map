@@ -1,0 +1,31 @@
+{
+  "name": "11ty-pagination-map",
+  "description": "Little script that dynamically generates Nunjucks templates based on a data file.",
+  "version": "1.0.0",
+  "author": "Peter deHaan",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-pagination-map/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "slugify": "^1.3.6"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-pagination-map#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-pagination-map.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "clean": "rimraf _site",
+    "format": "prettier _data/*.js .*.js --write",
+    "seed:templates": "npx eleventy --config=.eleventy.templates.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
