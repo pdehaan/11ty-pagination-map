@@ -1,4 +1,4 @@
-const slugify = require("slugify");
+const slugify = require("@11ty/eleventy/src/Filters/Slug");
 
 const map = [
   ["Genesis", 50],

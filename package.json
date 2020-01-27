@@ -14,15 +14,14 @@
     "slugify": "^1.3.6"
   },
   "homepage": "https://github.com/pdehaan/11ty-pagination-map#readme",
-  "keywords": [],
+  "keywords": ["11ty", "eleventy", "pagination", "templates"],
   "license": "MPL-2.0",
-  "main": ".eleventy.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pdehaan/11ty-pagination-map.git"
   },
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy --quiet",
     "clean": "rimraf _site",
     "format": "prettier _data/*.js .*.js --write",
     "seed:templates": "npx eleventy --config=.eleventy.templates.js",
