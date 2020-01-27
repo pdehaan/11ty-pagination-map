@@ -1,0 +1,7 @@
+<p>This is some content for {{ title }} chapter {{ renderData.chapter }}.</p>
+
+<div>
+  {% for verse in chapters -%}
+  <p><strong>{{ renderData.chapter }}:{{ loop.index }}</strong> {{ verse }}</p>
+  {% endfor %}
+</div>

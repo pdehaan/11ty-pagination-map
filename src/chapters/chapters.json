@@ -1,5 +1,9 @@
 {
-  "layout": "layouts/chapter.njk",
+  "layout": "layouts/chapter.html",
+  "pagination": {
+    "size": 1,
+    "alias": "chapters"
+  },
   "permalink": "book/{{ title | slug }}/chapter/{{ renderData.chapter }}/",
   "renderData": {
     "chapter": "{{ pagination.pageNumber + 1 }}"
