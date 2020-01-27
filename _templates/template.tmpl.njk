@@ -4,15 +4,12 @@ pagination:
   size: 1
   alias: book
   resolve: values
-permalink: "{{ book.name | slug }}.njk"
+permalink: "{{ book.slug }}.njk"
 ---
 ---
 title: {{ book.name }}
 pagination:
-  data: map.{{ book.name | slug }}.chapters
+  data: map.{{ book.slug }}.chapters
   size: 1
-  alias: chapter
-permalink: "book/{{ "title | slug" | escape }}/chapter/{{ "chapter" | escape }}/"
+  alias: chapters
 ---
-
-This is some content for {{ book.name }} chapter {{ "chapter" | escape }}.

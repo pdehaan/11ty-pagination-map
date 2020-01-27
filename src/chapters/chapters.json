@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/chapter.njk",
+  "permalink": "book/{{ title | slug }}/chapter/{{ renderData.chapter }}/",
+  "renderData": {
+    "chapter": "{{ pagination.pageNumber + 1 }}"
+  }
+}

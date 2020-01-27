@@ -3,7 +3,7 @@ module.exports = eleventyConfig => {
     dir: {
       data: "../_data",
       input: "_templates",
-      output: "src"
+      output: "src/chapters"
     }
   };
 };

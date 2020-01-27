@@ -23,7 +23,8 @@
   "scripts": {
     "build": "eleventy --quiet",
     "clean": "rimraf _site",
-    "format": "prettier _data/*.js .*.js --write",
+    "format:src": "prettier _data/*.js .*.js src/**/*.{js,json} --write",
+    "format:html": "prettier _site/**/*.html --write --loglevel=silent",
     "seed:templates": "npx eleventy --config=.eleventy.templates.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
